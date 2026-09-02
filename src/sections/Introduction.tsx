@@ -2,7 +2,7 @@
 import { useMotionValueEvent, useScroll, useTransform } from "framer-motion";
 
 import Tag from "@/components/Tag";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { twMerge } from "tailwind-merge";
 
 const text = `You're racing to create exceptional work, but traditional design tools slow you down with unnecessary complexity and steep learning curves.`;
@@ -31,7 +31,7 @@ export default function Introduction() {
                             <span key={wordIndex} className={twMerge("transition duration-500 text-white/15", wordIndex < currentWord && 'text-white')}>{`${word} `}</span>
                         ))}
                     </span>
-                    <span className="text-lime-400 block">That's why we build Layers.</span>
+                    <span className="text-lime-400 block">That&apos;s why we build Layers.</span>
                 </div>
             </div>
             <div className="h-[150vh]" ref={scrolTarget}></div>
